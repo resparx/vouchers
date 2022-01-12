@@ -1,0 +1,471 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Source sans pro" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap" />
+
+    <mj-style>
+      .body { background-color: #ffffff; }
+      .body p, h1, h2, h3, h4, h5, h6 {
+      color: #333333; margin: 0; padding: 0;
+      }
+
+      p, li {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      }
+
+      p {
+      color: #333333;
+      }
+
+      li {
+      color: #555555;
+      }
+
+      th {
+      background-color: #F2F2F2;
+      padding: 12px;
+      }
+
+
+      th .head {
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #555555;
+      }
+
+      th .sub-head {
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #555555;
+      }
+
+      td {
+      padding: 12px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 400;
+      }
+
+      ul {
+      padding: 0 20px
+      }
+
+      .table {
+      padding: 20px;
+      border: 1px solid #B7B7B7;
+      }
+
+      .ball-separator {
+      width: 4px;
+      height: 4px;
+      background: #D4D4D4;
+      border-radius: 50px;
+      }
+
+      .table-wrapper {
+      margin-bottom: 80px;
+      }
+
+      .table-head {
+      border-bottom: unset;
+      }
+
+      .data-entity {
+      border-bottom: 1px solid #B7B7B7;
+      }
+
+      .header-wrapper {
+      background: linear-gradient(93.31deg, #7A39DB 3.62%, #8D63CA 98.56%), #6226B7;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      }
+
+      .title {
+      font-weight: 600;
+      line-height: 22px;
+      font-size: 18px;
+      }
+
+      .hotel-title {
+      font-weight: 500;
+      line-height: 18px;
+      font-size: 15px;
+      margin-bottom: 4px;
+      padding: 0;
+      }
+
+      .hotel-group {
+      padding: 20px;
+      display: flex;
+      flex-direction: column
+      }
+
+      .hotel-card {
+      width: 100%;
+      border-radius: 8px;
+      background-color: #F7F4FB;
+      padding: 20px;
+      margin-bottom: 20px;
+      }
+
+      .hotel-key {
+      font-weight: 600;
+      line-height: 17px;
+      font-size: 14px;
+      color: #333333;
+      }
+
+      .hotel-value {
+      font-weight: 400;
+      line-height: 17px;
+      font-size: 14px;
+      color: #333333;
+      }
+
+      .head-group {
+      margin-bottom : 20px;
+      }
+
+      .hotel-main-amenities { display: flex; flex-direction: row; }
+
+      .hotel-main-amenities p {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      }
+
+      .flex { display: flex; }
+
+      .align-center { align-items: center; }
+
+      .trip-id {
+      justify-content: flex-end;
+      }
+
+      .trip-id p {
+      font-weight: 400;
+      line-height: 18px;
+      font-size: 15px;
+      color: #FFFFFF;
+      }
+
+      .trip-id h2 {
+      font-weight: 600;
+      line-height: 18px;
+      font-size: 15px;
+      color: #FFFFFF;
+      }
+
+      .pnr {
+      justify-content: flex-end;
+      }
+
+      .pnr p {
+      font-weight: 600;
+      line-height: 16px;
+      font-size: 13px;
+      color: #333333;
+      }
+
+      .pnr h2 {
+      font-weight: 400;
+      line-height: 16px;
+      font-size: 13px;
+      color: #333333;
+      }
+
+
+      .content-title {
+      font-weight: 600;
+      line-height: 18px;
+      font-size: 15px;
+      color: #333333;
+      margin: 0;
+      }
+
+      .amenities {
+      display: flex;
+      flex-wrap: wrap;
+      }
+
+      .amenities > p {
+      display: flex;
+      width: 33%;
+      align-items: center;
+      text-align: left;
+      margin-bottom: 20px;
+      }
+
+      .footer-wrapper {
+      background-color: #F2F2F2;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      }
+
+    </mj-style>
+  </mj-head>
+  <mj-body css-class="body">
+    <mj-raw>
+      <!-- Header -->
+    </mj-raw>
+    <mj-section css-class="header-wrapper">
+      <mj-column>
+        <mj-text font-size="20px" color="#FFFFFF">pytwork</mj-text>
+      </mj-column>
+      <mj-column padding="0">
+        <mj-text align="right">
+          <div class="flex trip-id">
+            <p>Trip ID: </p> &nbsp; <h2>1234567890</h2>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Stay details -->
+    </mj-raw>
+    <mj-section padding="0" css-class="hotel-group">
+      <mj-group css-class="head-group" width="100%">
+        <mj-column padding="0">
+          <mj-text padding="0">
+            <h2 class="title">Hotel booking deatails</h2>
+          </mj-text>
+          <mj-text padding="0">
+            <p>Booked on 26 July 2021</p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" align="right">
+            <div class="flex pnr">
+              <p>PNR: </p> &nbsp;
+              <h2>30154DC536856</h2>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+      <mj-group width="90%" css-class="hotel-card">
+        <mj-column padding="0px" css-class="hotel-main-amenities">
+          <mj-text padding="0">
+            <h2 class="hotel-title">Welcomhotel by ITC Hotels</h2>
+          </mj-text>
+          <mj-text padding="0" css-class="hotel-main-amenities">
+            <div class="flex align-center">
+              <p>4 star hotel</p>
+              &nbsp;&nbsp;
+              <span class="ball-separator"></span>
+              &nbsp;&nbsp;
+              <p>Apartment</p>
+              &nbsp;&nbsp;
+              <span class="ball-separator"></span>
+              &nbsp;&nbsp;
+              <p>5km from city center</p>
+            </div>
+          </mj-text>
+          <mj-divider border-width="1px" border-style="solid" border-color="#EEE8F7" />
+          <mj-text padding="0" css-class="hotel-main-amenities">
+            <div class="flex">
+              <p class="content-title">Booking type:</p> &nbsp;&nbsp;&nbsp;
+              <p class="hotel-value">Refundable</p>
+            </div>
+            <div class="flex">
+              <p class="hotel-key">Address:</p> &nbsp;&nbsp;&nbsp;
+              <p>No. 5/11, Vijayaraghava Road, Anna Nagar, Chennai 600 843</p>
+            </div>
+            <div class="flex">
+            <div class="flex">
+              <p class="hotel-key">Check-in:</p>
+              <p>3:00 PM - Tue, 10 Aug 2021</p>
+            </div>
+            <div class="flex">
+              <p class="hotel-key">Check-out:</p>
+              <p>12:00 PM - Sat, 12 Aug 2021</p>
+            </div></div>
+            
+          </mj-text>
+        </mj-column>
+      </mj-group>
+      <mj-group width="90%" css-class="hotel-card">
+        <mj-column>
+          <mj-text padding="0">
+            <p>Room 1: Deluxe Room Double </p>
+          </mj-text>
+          <mj-divider border-width="1px" border-style="solid" border-color="#EEE8F7" />
+          <mj-text padding="0" css-class="hotel-main-amenities">
+            <div class="flex">
+              <p>Room size:</p>
+              <p>256 sq ft.
+            </div>
+            <div class="flex">
+              <p>Meal plan:</p>
+              <p>Breakfast included</p>
+            </div>
+            <div class="flex">
+              <p>No. of people:</p>
+              <p>2 adults
+            </div>
+          </mj-text>
+          <mj-divider border-width="1px" border-style="solid" border-color="#EEE8F7" />
+          <mj-text padding="0" css-class="hotel-main-amenities">
+            <div class="flex">
+              <p>Room size:</p>
+              <p>256 sq ft.
+            </div>
+            <div class="flex">
+              <p>Meal plan:</p>
+              <p>Breakfast included</p>
+            </div>
+            <div class="flex">
+              <p>No. of people:</p>
+              <p>2 adults
+            </div>
+          </mj-text>
+        </mj-column>
+    </mj-section>
+    <mj-section padding="20px">
+      <mj-column>
+        <mj-text padding="0 0 16px">
+          <p>Note</p>
+          <p>1. All guests are advised to carry a valid Photo ID proof (PAN card is not valid)</p>
+          <p>2. Early check -in or late check-out requests are subject to availability</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px 20px 0">
+      <mj-column>
+        <mj-text padding="0 0 16px">
+          <p class="content-title">Amenities</p>
+        </mj-text>
+        <mj-text padding="0">
+          <div class="amenities">
+            <p>Elevator Facility</p>
+            <p>Swimming Pool</p>
+            <p>Spa Service </p>
+            <p>Gym </p>
+            <p>Laundry Facility</p>
+            <p>Complimentary Food</p>
+            <p>Concierge Service</p>
+            <p>Water Sports</p>
+            <p>Bar and Drinks</p>
+            <p>Free Wi-Fi</p>
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px 20px 0">
+      <mj-column>
+        <mj-text padding="0">
+          <p class="content-title">Inclusions</p>
+        </mj-text>
+        <mj-text padding="0">
+          <ul>
+            <li>Use of nearby fitness center (discount), Bar/lounge, Elevator </li>
+            <li>24-hour front desk, Business center, Meeting rooms</li>
+            <li>Tours/ticket assistance, Coffee shop or cafÃ©, Dry cleaning/laundry service</li>
+            <li>Free WiFi, Smoke-free property, Safe-deposit box at front desk</li>
+            <li>Terrace, Luggage storage, Breakfast available (surcharge)</li>
+            <li>Concierge services, Laundry facilities, Wheelchair accessible path of travel</li>
+            <li>Accessible bathroom, In-room accessibility
+              Airport transportation (surcharge), Multilingual staff,Free newspapers in lobby</li>
+            </li>
+          </ul>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px 20px 0">
+      <mj-column>
+        <mj-text padding="0">
+          <p class="content-title">Check-in Instructions</p>
+        </mj-text>
+        <mj-text padding="0">
+          <ul>
+            <li>Extra-person charges may apply and vary depending on property policy. </li>
+            <li>24-hour front desk, Business center, Meeting rooms</li>
+            <li>Government-issued photo identification and a credit card, debit card, or cash deposit are required at check-in for incidental charges.</li>
+            <li> Special requests are subject to availability upon check-in and may incur additional charges. Special requests cannot be guaranteed.</li>
+            <li> The name on the credit card used at check-in to pay for incidentals must be the primary name on the guestroom reservation.</li>
+            <li> 24-hour airport shuttle service is available on request. Fees may apply.</li>
+            <li> Contact the property in advance to make arrangements.</li>
+          </ul>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px 20px 0">
+      <mj-column>
+        <mj-text padding="0">
+          <p class="content-title">Policies</p>
+        </mj-text>
+        <mj-text padding="0">
+          <ul>
+            <li>This property offers transfers from the airport (surcharges may apply). </li>
+            <li>Guests must contact the property with arrival details before travel, using the contact information on the booking confirmation. Only registered guests are allowed in the guestrooms</li>
+          </ul>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px 20px 0">
+      <mj-column>
+        <mj-text padding="0 0 16px">
+          <p class="content-title">Optional Fees</p>
+        </mj-text>
+        <mj-text padding="0">
+          <p>The following fees and deposits are charged by the property at time of service, check-in, or check-out</p>
+          <ul>
+            <li>Fee for full breakfast: EUR 16 for adults and EUR 16 for children (approximately) </li>
+            <li>Airport shuttle fee: EUR 37 per vehicle (one way) </li>
+            <li>Self parking fee: EUR 22 per day (in/out privileges) </li>
+            <li> Early check-in fee: EUR 30 (subject to availability) </li>
+            <li> Late check-out fee: EUR 59 (subject to availability) .</li>
+            <li> Rollaway bed fee: EUR 15.0 per night </li>
+          </ul>
+          <p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px">
+      <mj-column css-class="table-wrapper">
+        <mj-text padding="0 0 16px">
+          <p class="content-title">Cancellation Policy</p>
+        </mj-text>
+        <mj-table padding="0" css-class="table">
+          <tr class="table-head">
+            <th>
+              <div>
+                <p class="head">TIME FRAME</p>
+                <p class="sub-head">Days before departure</p>
+              </div>
+            </th>
+            <th>
+              <div>
+                <p class="head">TOTAL REFUND</p>
+                <p class="sub-head">Minus cancellation fees</p>
+              </div>
+            </th>
+          </tr>
+          <tr class="data-entity">
+            <td>23rd Nov to 2nd Dec</td>
+            <td>₹13,385</td>
+          </tr>
+          <tr class="data-entity">
+            <td>3rd Dec to 12th Dec</td>
+            <td>₹1000</td>
+          </tr>
+          <tr>
+            <td>13th Dec to 25th Dec</td>
+            <td>₹0</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="footer-wrapper">
+      <mj-column>
+        <mj-text align="center" font-size="12px" color="#777777">For Support, Call +91 9003222085 or email us at vacations@pickyourtrail.com</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
